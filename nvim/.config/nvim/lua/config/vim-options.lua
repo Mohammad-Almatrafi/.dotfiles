@@ -1,7 +1,7 @@
 -- put this option to false if you don't have a nerd font
 vim.g.have_nerd_font = true
 vim.opt.swapfile = false
-vim.opt.guicursor = ""
+vim.opt.guicursor = {"n-v-c-i:block"}
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4

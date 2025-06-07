@@ -16,11 +16,3 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 
 
-safe_source() {
-  local file="$1"
-  
-  if [[ ! -f "$file" ]]; then
-    return
-  fi
-    source "$file"
-}

@@ -2,7 +2,7 @@ source "/home/rur1k/.config/zsh/zshConfig.sh"
 
 
 
-export TERMINAL=ghostty
+# export TERMINAL=ghostty
 export EDITOR=nvim
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 

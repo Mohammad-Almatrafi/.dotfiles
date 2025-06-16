@@ -15,7 +15,4 @@ xfconf-query -c xfce4-terminal -p /background-image-file -s "$WALLPAPER"
 xfconf-query -c xfce4-terminal -p /background-image-shading --create -t string -s 0.9
 xfconf-query -c xfce4-terminal -p /background-image-style --create -t string -s TERMINAL_BACKGROUND_STYLE_STRETCHED
 
-####################################
-########## windows variant #########
-####################################
 

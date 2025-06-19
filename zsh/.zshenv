@@ -2,6 +2,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 
+export TMUXIFIER="$XDG_CONFIG_HOME/tmuxifier"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
 export HISTSIZE=10000                   # Maximum events for internal history
@@ -14,4 +15,3 @@ export VISUAL="nvim"
 
 
 
-export PATH="$HOME/.platformio/penv/bin:$PATH"

@@ -1,9 +1,28 @@
-source "/home/rur1k/.config/zsh/zshConfig.sh"
+autoload -U compinit; compinit
 
-export TERMINAL=wezterm
-export EDITOR=nvim
+safe_source() {
+  local file="$1"
+  
+  if [[ ! -f "$file" ]]; then
+    return
+  fi
+
+    source "$file"
+}
+
+source ${ZDOTDIR}/aliasses.sh
+
+source "${ZDOTDIR}/theme-and-appearance.zsh"
+source "${ZDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+source ${ZDOTDIR}/prompt.sh
+
+export PATH="$PATH:/opt/riscv/bin"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 eval "$(tmuxifier init -)"
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -19,8 +38,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-
-
-export PATH="$HOME/.platformio/penv/bin:$PATH"
 

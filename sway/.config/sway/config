@@ -10,9 +10,9 @@ exec_always ~/.config/sway/background.sh
 
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-# set $uifont "Ubuntu 14"
-# set $highlight #3daee9
-# set $prompt #18b218
+set $uifont "Ubuntu 14"
+set $highlight #3daee9
+set $prompt #18b218
 set $menu bemenu-run --fn $uifont -b -p "▶" --tf "$prompt" --hf "$highlight" --sf "$highlight" --scf "$highlight" | xargs swaymsg exec
 # set $lock swaylock -f -i $wallpaper -s fill
 ### Needed for xdg-desktop-portal-kde
@@ -237,30 +237,37 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    mode hide
-    hidden_state hide
-    modifier $mod
+
+
+    status_command ~/.config/sway/status.sh
     font $uifont
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%-d.%-m.%Y. %H:%M:%S %p'; do sleep 1; done
-
+    # mode hide
+    # hidden_state hide
+    # modifier $mod
+    # font $uifont
+    #
+    # # When the status_command prints a new line to stdout, swaybar updates.
+    # # The default just shows the current date and time.
+    # status_command while date +'%-d.%-m.%Y. %H:%M:%S %p'; do sleep 1; done
+    #
     colors {
         statusline #ffffff
-        background #121212
-        #background #00000000
-        focused_workspace #121212 #18b218 #232627
-        # active_workspace #121212 $highlight #232627
-        inactive_workspace #121212 #7f8c8d #232627
+        # background #121212
+        background #000000bb
+        focused_workspace #000000bb #18b218 #232627
+        active_workspace #000000bb $highlight #232627
+        inactive_workspace #000000bb #7f8c8d #232627
     }
 }
+
 #
 # Titlebars
 #

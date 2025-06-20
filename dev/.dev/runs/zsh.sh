@@ -1,5 +1,3 @@
-export ZDOTDIR=$HOME/.config/zsh
-
 sudo apt install zsh
 
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZDOTDIR}/plugins/zsh-syntax-highlighting"

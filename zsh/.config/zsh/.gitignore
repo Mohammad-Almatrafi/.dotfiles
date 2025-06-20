@@ -2,3 +2,4 @@ wallpapers.sh
 .zhistory
 .zcomp*
 plugins/
+.p10k.zsh

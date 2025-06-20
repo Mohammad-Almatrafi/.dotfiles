@@ -1,11 +1,15 @@
 local wezterm = require 'wezterm'
-local config = {}
 local theme = require('lua/rose-pine').moon
+local font = require('lua/font')
+local config = {}
 
-config.font = wezterm.font('JetBrains Mono', { weight = 'Bold', italic = false })
 
 config.colors = theme.colors()
 config.window_frame = theme.window_frame() -- needed only if using fancy tab bar
+config.font = font.font
+config.font_size = font.font_size
+config.freetype_render_target = font.freetype_render_target
+config.freetype_load_target = font.freetype_load_target
 
 return config
 

@@ -16,6 +16,7 @@
 
 # Load more completions
 fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
+fpath=($ZDOTDIR/plugins/conda-zsh-completion/ $fpath)
 
 # Should be called before compinit
 zmodload zsh/complist

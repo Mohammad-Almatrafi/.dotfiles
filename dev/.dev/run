@@ -1,8 +1,9 @@
 #!/bin/bash
-XDG_CONFIG_HOME="${HOME}/.config"
-ZDOTDIR=$HOME/.config/zsh
+export XDG_CONFIG_HOME="${HOME}/.config"
+export ZDOTDIR=$HOME/.config/zsh
 MONO_PREFIX="${BASH_SOURCE[0]%/*}/"
-FILE_CALLED=$1
+DISTRO=$1
+FILE_CALLED=$2
 
 
-bash ${MONO_PREFIX}/runs/${FILE_CALLED}.sh
+bash ${MONO_PREFIX}/${DISTRO}/${FILE_CALLED}.sh

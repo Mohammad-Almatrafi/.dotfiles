@@ -72,12 +72,12 @@
     },
 
     "clock#1": {
-        "format": " {:%a}",
+        "format": "   {:%a}",
         "tooltip": false,
         "on-click": "gsimplecal"
     },
     "clock#2": {
-        "format": " {:%d-%h-%Y}",
+        "format": "   {:%d-%h-%Y}",
         "tooltip": false,
         "on-click": "gsimplecal"
     },

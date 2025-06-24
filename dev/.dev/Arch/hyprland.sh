@@ -1,7 +1,6 @@
 #!/bin/bash
 
-pacman -S hyprland wofi waybar
-
+sudo pacman -S --noconfirm hyprland wofi waybar hyprpaper
 
 stow_PREFIX="${BASH_SOURCE[0]%/*}/"
 stow_loc="${stow_PREFIX}/../../../"

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S gcc-riscv64-unknown-elf qemu-efi-riscv64
+sudo pacman -S --noconfirm gcc-riscv64-unknown-elf qemu-efi-riscv64

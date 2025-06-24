@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo pacman -S git stow fzf ripgrep tmux curl wget
+sudo pacman -S --noconfirm git stow fzf ripgrep tmux curl wget
 # build-essential

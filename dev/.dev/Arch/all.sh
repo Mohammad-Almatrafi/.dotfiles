@@ -8,6 +8,7 @@ source ${current_dir}/nvim.sh
 source ${current_dir}/tmuxifier.sh
 source ${current_dir}/sway.sh
 source ${current_dir}/yay.sh
+source ${current_dir}/essential.sh
 source ${current_dir}/hyprland.sh
 
 # source ${current_dir}/riscv.sh

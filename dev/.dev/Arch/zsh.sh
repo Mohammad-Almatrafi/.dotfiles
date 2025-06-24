@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S zsh
+sudo pacman -S --nconfirm zsh
 stow_PREFIX="${BASH_SOURCE[0]%/*}/"
 stow_loc="${stow_PREFIX}/../../../"
 

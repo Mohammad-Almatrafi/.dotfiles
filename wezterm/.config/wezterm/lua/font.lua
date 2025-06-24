@@ -1,6 +1,6 @@
 local wezterm = require('wezterm')
 
-local font_family = 'JetBrains Mono'
+local font_family = 'Cascadia Mono'
 local font_size = 24
 
 return {

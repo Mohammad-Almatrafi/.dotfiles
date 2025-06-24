@@ -1,6 +1,9 @@
 local wezterm = require 'wezterm'
 local theme = require('lua/rose-pine').moon
 local font = require('lua/font')
+
+-- config.enable_wayland = true
+
 local config = {}
 
 

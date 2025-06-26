@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm sway bemenu
+sudo pacman -S --noconfirm sway bemenu swaybg
 
 stow_PREFIX="${BASH_SOURCE[0]%/*}/"
 stow_loc="${stow_PREFIX}/../../../"

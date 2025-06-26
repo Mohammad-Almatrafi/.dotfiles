@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Install dependencies
-sudo pacman -S --noconfirm ninja-build gettext cmake unzip curl build-essential git
-
+sudo pacman -S --noconfirm ninja-build
+sudo pacman -S --noconfirm gettext
+sudo pacman -S --noconfirm cmake
+sudo pacman -S --noconfirm unzip
+sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm curl
 # Clone Neovim repo
 git clone -b release-0.11 https://github.com/neovim/neovim.git
 cd neovim

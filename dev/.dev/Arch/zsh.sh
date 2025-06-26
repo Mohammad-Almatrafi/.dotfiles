@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --nconfirm zsh
+sudo pacman -S --noconfirm zsh
 stow_PREFIX="${BASH_SOURCE[0]%/*}/"
 stow_loc="${stow_PREFIX}/../../../"
 
@@ -17,4 +17,4 @@ git clone --depth=1 https://github.com/conda-incubator/conda-zsh-completion.git 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZDOTDIR}/plugins/powerlevel10k"
 
 
-chsh -S /bin/zsh
+chsh -s /bin/zsh

@@ -33,3 +33,4 @@ yay -S --noconfirm wget
 yay -S --noconfirm which
 yay -S --noconfirm wofi
 yay -S --noconfirm yay-bin
+yay -S --noconfirm ncurses5-compat-libs

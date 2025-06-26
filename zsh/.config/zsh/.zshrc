@@ -35,6 +35,7 @@ export PATH="$HOME/.platformio/penv/bin:$PATH"
 __conda_setup="$('/home/rur1k/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 eval "$__conda_setup"
 export PATH="$HOME/miniconda3/bin:$PATH"
+# export PATH="$HOME/miniconda3/bin:$PATH"
 unset __conda_setup
 
 # <<< conda initialize <<<

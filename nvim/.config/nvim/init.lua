@@ -7,7 +7,6 @@ require("config.vim-options")
 require("config.keymaps")
 require("config.lazy")
 
-vim.cmd(":Neotree filesystem close")
 
 require("config.plugins-keymaps")
 

@@ -15,3 +15,4 @@ export VISUAL="nvim"
 
 
 
+. "$HOME/.cargo/env"

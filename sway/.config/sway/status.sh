@@ -11,7 +11,7 @@ while true; do
     fi
 
     # Date/time
-    TIME=$(date +'%-d.%-m.%Y. %H:%M:%S')
+    TIME=$(date +'%F  %X')
 
     # Print status line
     echo "$BAT_DISPLAY | $TIME"

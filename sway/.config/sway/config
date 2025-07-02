@@ -1,7 +1,7 @@
 # Read `man 5 sway` for a complete reference.
 
 ### global Variables
-set $term ghostty
+set $term wezterm
 # Mod4 for Logo(super) key. Use Mod1 for Alt.
 set $mod Mod1
 
@@ -20,6 +20,7 @@ set $menu wofi --show drun
 
 
 exec_always ~/.config/sway/background.sh
+exec_always mako
 include ~/.config/sway/binds
 include ~/.config/sway/window
 include ~/.config/sway/monitor

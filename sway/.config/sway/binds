@@ -17,7 +17,15 @@
     bindsym $mod+Shift+c reload
 
     # exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m '-' -b 'logout' 'ghostty -e swaymsg exit' -b 'poweroff' 'ghostty -e shutdown -h now' -b 'suspend' 'ghostty -e suspend' -b 'restart' 'ghostty -e reboot'
+    bindsym $mod+Shift+e exec swaynag \
+    -t warning \
+    -m '' \
+    -b 'logout' 'swaymsg exit' \
+    -b 'poweroff' 'shutdown -h now' \
+    -b 'suspend' 'suspend' \
+    -b 'restart' 'reboot'
+
+
 
     bindsym $mod+F12 exec shutdown now
     bindsym Mod4+L exec $lock bindsym Control+Mod1+Delete exec ksysguard

@@ -28,3 +28,18 @@ vim.api.nvim_create_autocmd(
         command = "set filetype=systemverilog",
     }
 )
+
+vim.api.nvim_create_autocmd(
+    { "FileType" }, {
+        pattern = {"c","systemverilog", "verilog"} ,
+        callback = function()
+            -- Example: Set tab width for C
+            vim.bo.expandtab = true
+            vim.bo.tabstop = 2
+            vim.bo.softtabstop = 2
+            vim.bo.shiftwidth = 2
+        end,
+
+    }
+)
+

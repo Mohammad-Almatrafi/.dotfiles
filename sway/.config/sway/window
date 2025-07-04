@@ -11,8 +11,13 @@
 ### Titlebar
 #########################################################
     titlebar_border_thickness 1
-    font pango:$uifont 12
+    font pango:$uifont 18
     titlebar_padding 8 2
+    default_border pixel
+    hide_edge_borders smart
+    # floating_modifier $mod normal
+
+
 
 # window rules
     for_window [app_id="mpv"] border normal

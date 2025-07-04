@@ -4,6 +4,7 @@ bar {
     height 25
     position bottom
     status_command ~/.config/sway/status.sh
+
     font pango:$uifont 16
     # status_command sway-status
     colors {

@@ -1,6 +1,4 @@
 {
-  "workbench.iconTheme": "vscode-icons",
-  "hediet.vscode-drawio.resizeImages": null,
   "editor.cursorBlinking": "solid",
   "background.backgroundOpacity": [0.95, 0.1, 0.1, 0.1],
   "editor.fontFamily": "'Cascadia Mono'",
@@ -12,6 +10,8 @@
   "editor.lineNumbers": "relative",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
+  "workbench.sideBar.location": "right",
+  "liveServer.settings.CustomBrowser": "chrome",
   "vim.normalModeKeyBindingsNonRecursive": [
     //nice to have
     {
@@ -139,12 +139,5 @@
   "editor.lineHeight": 1.75,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "liveServer.settings.CustomBrowser": "chrome",
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
   }
 }

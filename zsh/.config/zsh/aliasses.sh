@@ -22,3 +22,5 @@ alias lal='ls -al'  # long format
 alias lt='ls -aT' # tree listing
 alias l.="ls -a | grep -e '^\.'" # show only dotfiles
 
+alias view="nvim -R -M"
+

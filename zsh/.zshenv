@@ -11,8 +11,10 @@ export SAVEHIST=10000                   # Maximum events in history file
 export TERMINAL="wezterm"
 export EDITOR="nvim"
 export VISUAL="nvim"
+export MANPAGER="nvim +Man!"
+export PAGER="nvim +Man!"
 
 
 
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

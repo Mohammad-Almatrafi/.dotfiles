@@ -13,4 +13,3 @@ require("config.plugins-keymaps")
 vim.cmd("colorscheme rose-pine-moon")
 
 require("config.transparency")
-

@@ -5,14 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-safe_source() {
-  local file="$1"
+make_dirs_files() {
   
-  if [[ ! -f "$file" ]]; then
-    return
+  if [[ ! -f ${ZDOTDIR}/.unconsisstent_config.sh ]]; then
+    touch ${ZDOTDIR}/.unconsisstent_config.sh
   fi
 
-    source "$file"
 }
 
 
@@ -22,12 +20,11 @@ source ${ZDOTDIR}/aliasses.sh
 source "${ZDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "${ZDOTDIR}/completion.zsh"
+source ${ZDOTDIR}/.unconsisstent_config.sh
 
 source "${ZDOTDIR}/plugins/powerlevel10k/powerlevel10k.zsh-theme"
 
-export PATH="$PATH:/opt/riscv/bin"
 export PATH="$XDG_CONFIG_HOME/tmuxifier/bin:$PATH"
-export PATH="$HOME/.platformio/penv/bin:$PATH"
 
 
 # >>> conda initialize >>>

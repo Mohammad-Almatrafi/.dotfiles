@@ -10,9 +10,9 @@
 #########################################################
 ### Titlebar
 #########################################################
-    titlebar_border_thickness 1
+    # titlebar_border_thickness 1
     font pango:$uifont 10
-    titlebar_padding 8 2
+    # titlebar_padding 8 2
     default_border pixel
     hide_edge_borders smart
     # floating_modifier $mod normal
@@ -20,7 +20,7 @@
 
 
 # window rules
-    for_window [app_id="mpv"] border normal
+    # for_window [app_id="mpv"] border normal
     for_window [window_role="pop-up"] floating enable
     for_window [window_role="bubble"] floating enable
     for_window [window_role="task_dialog"] floating enable
@@ -31,7 +31,7 @@
     for_window [class="xdg-desktop-portal-kde"] floating enable
     for_window [class="ksysguard"] floating enable
     for_window [class="ksysguard"] sticky enable
-    for_window [app_id="mpv"] layout tabbed
+    # for_window [app_id="mpv"] layout tabbed
     for_window [class="Wine"] floating enable
-    for_window [app_id="lutris"] floating enable
+    # for_window [app_id="lutris"] floating enable
 

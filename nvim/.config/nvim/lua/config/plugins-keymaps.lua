@@ -2,7 +2,9 @@ local builtin = require("telescope.builtin")
 vim.keymap.set({ "n", "v" }, "<leader>sf", builtin.find_files, {})
 vim.keymap.set({ "n", "v" }, "<leader>sg", builtin.live_grep, {})
 
-vim.keymap.set({ "n", "v" }, "<C-e>", ":Neotree filesystem float focus toggle<CR>")
+-- local Oil
+local oil = require("oil")
+vim.keymap.set({ "n", "v" }, "<C-e>", oil.open_float) --":Oil<CR>")
 vim.keymap.set("n", "<leader>hd", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
@@ -20,6 +22,17 @@ cmp.setup({
             },
             { "i", "c" }
         ),
+    },
+})
+
+
+oil.setup({
+    keymaps = {
+        ["<CR>"] = "actions.select",
+        ["<C-s>"] = { "actions.select", opts = { vertical = true } },
+        ["<C-h>"] = false,
+        ["<C-c>"] = false,
+        ["q"] = { "actions.close", mode = "n" },
     },
 })
 

@@ -17,8 +17,10 @@ vim.keymap.set("n", "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set("v", "<leader>y", '"+y')
 
--- good to unbind some useless stuff
 vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("n", "<C-c>", "<Esc>")
+vim.keymap.set("v", "<C-c>", "<Esc>")
+-- good to unbind some useless stuff
 vim.keymap.set("n", "Q", "<nop>")
 
 -- indent and unindent without losing the visual select
@@ -28,6 +30,7 @@ vim.keymap.set("n", "<", "<<", {})
 vim.keymap.set("v", "<", "< gv", {})
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set('n', '<C-c>', '<cmd>nohlsearch<CR>')
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode

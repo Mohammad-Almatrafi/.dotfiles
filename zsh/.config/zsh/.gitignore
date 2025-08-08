@@ -1,5 +1,7 @@
 wallpapers.sh
 .zhistory
+.zsh_history
 .zcomp*
 plugins/
 .p10k.zsh
+.unconsisstent_config.sh

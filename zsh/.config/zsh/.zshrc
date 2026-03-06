@@ -13,14 +13,12 @@ make_dirs_files() {
 
 }
 
-
 export TMUXIFIER=$XDG_CONFIG_HOME/tmuxifier
 
 source ${ZDOTDIR}/aliasses.sh
 source "${ZDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "${ZDOTDIR}/completion.zsh"
-source ${ZDOTDIR}/.unconsisstent_config.sh
 
 source "${ZDOTDIR}/plugins/powerlevel10k/powerlevel10k.zsh-theme"
 
@@ -45,3 +43,5 @@ eval "$(tmuxifier init -)"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export PATH=$PATH:/home/rur1k/.spicetify

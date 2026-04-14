@@ -23,6 +23,7 @@ source "${ZDOTDIR}/completion.zsh"
 source "${ZDOTDIR}/plugins/powerlevel10k/powerlevel10k.zsh-theme"
 
 export PATH="$XDG_CONFIG_HOME/tmuxifier/bin:$PATH"
+export PATH="/opt/oss-cad-suite/bin:$PATH"
 
 
 # >>> conda initialize >>>

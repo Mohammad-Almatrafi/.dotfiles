@@ -1,13 +1,12 @@
 -- put this option to false if you don't have a nerd font
 vim.g.have_nerd_font = true
 vim.opt.swapfile = false
-vim.opt.guicursor = {"n-v-c-i:block"}
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
@@ -25,8 +24,6 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
-
 -- Save undo history
 vim.opt.undofile = true
 
@@ -39,15 +36,14 @@ vim.opt.smartcase = true
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = {
-    tab = '» ', -- Highlight tabs
-    trail = '·', -- Highlight trailing spaces
-    nbsp = '␣', -- Highlight non-breaking spaces
-    lead = '·', -- Highlight leading spaces
+  tab = "» ", -- Highlight tabs
+  trail = "·", -- Highlight trailing spaces
+  nbsp = "␣", -- Highlight non-breaking spaces
+  lead = "·", -- Highlight leading spaces
 }
 
 -- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
-
+vim.opt.inccommand = "split"
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
@@ -58,7 +54,7 @@ vim.opt.cursorline = true
 vim.opt.confirm = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false

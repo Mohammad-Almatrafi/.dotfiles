@@ -13,62 +13,60 @@ vim.keymap.set("n", "<leader>p", vim.lsp.buf.format, {})
 
 local cmp = require("cmp")
 cmp.setup({
-    mapping = {
-        ["<C-n>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
-        ["<C-p>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
-        ["<CR>"] = cmp.mapping(
-            cmp.mapping.confirm {
-                behavior = cmp.ConfirmBehavior.Insert, select = true,
-            },
-            { "i", "c" }
-        ),
-    },
+  mapping = {
+    ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+    ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+    ["<CR>"] = cmp.mapping(
+      cmp.mapping.confirm({
+        behavior = cmp.ConfirmBehavior.Insert,
+        select = true,
+      }),
+      { "i", "c" }
+    ),
+  },
 })
 
-
 oil.setup({
-    keymaps = {
-        ["<CR>"] = "actions.select",
-        ["<C-s>"] = { "actions.select", opts = { vertical = true } },
-        ["<C-h>"] = false,
-        ["<C-c>"] = false,
-        ["q"] = { "actions.close", mode = "n" },
-    },
+  keymaps = {
+    ["<CR>"] = "actions.select",
+    ["<C-s>"] = { "actions.select", opts = { vertical = true } },
+    ["<C-h>"] = false,
+    ["<C-c>"] = false,
+    ["q"] = { "actions.close", mode = "n" },
+    ["<ESC>"] = { "actions.close", mode = "n" },
+  },
 })
 
 local ls = require("luasnip")
 
-
 vim.keymap.set({ "i", "s" }, "<C-k>", function()
-    if ls.expand_or_jumpable() then
-        ls.expand_or_jump()
-    end
+  if ls.expand_or_jumpable() then
+    ls.expand_or_jump()
+  end
 end, { silent = true })
 
 vim.keymap.set({ "i", "s" }, "<C-j>", function()
-    if ls.jumpable(-1) then
-        ls.jump(-1)
-    end
+  if ls.jumpable(-1) then
+    ls.jump(-1)
+  end
 end, { silent = true })
 
 -- noice plugin keymaps
 vim.keymap.set({ "n", "v" }, "<leader>snh", function()
-    require("noice").cmd("history")
+  require("noice").cmd("history")
 end)
 vim.keymap.set({ "n", "v" }, "<leader>sna", function()
-    require("noice").cmd("all")
+  require("noice").cmd("all")
 end, {})
 vim.keymap.set({ "n", "v" }, "<leader>snd", function()
-    require("noice").cmd("dismiss")
+  require("noice").cmd("dismiss")
 end, {})
 vim.keymap.set({ "n", "v" }, "<leader>snt", function()
-    require("noice").cmd("pick")
+  require("noice").cmd("pick")
 end, {})
 
+vim.keymap.set("n", "<space>a", vim.lsp.buf.code_action, bufopts)
+
 -- to open diagnostic window
-vim.keymap.set("n", "<leader>sdg",
-    ":Telescope diagnostics <CR>",
-    { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>sdf",
-    ":Telescope diagnostics bufnr=0 <CR>"
-    , { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>sdg", ":Telescope diagnostics <CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>sdf", ":Telescope diagnostics bufnr=0 <CR>", { noremap = true, silent = true })

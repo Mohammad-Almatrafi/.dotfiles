@@ -1,10 +1,18 @@
 return {
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-    },
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-    }
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+  },
+
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 }

@@ -1,15 +1,3 @@
-font-family = "Cascadia Mono"
-font-family-bold = auto
-font-family-italic = auto
-font-family-bold-italic = auto
-theme = "rose-pine-moon"
-font-size = 22
-window-padding-x = 2
-window-padding-y = 2
-background-opacity = 0.8
-fullscreen = false
-window-vsync = false
-
 # This is the configuration file for Ghostty.
 #
 # This template file has been automatically created at the following
@@ -26,12 +14,18 @@ window-vsync = false
 #
 # Additionally, each config option is also explained in detail
 # on Ghostty's website, at https://ghostty.org/docs/config.
+#
+# Ghostty can reload the configuration while running by using the menu
+# options or the bound key (default: Command + Shift + comma on macOS and
+# Control + Shift + comma on other platforms). Not all config options can be
+# reloaded while running; some only apply to new windows and others may require
+# a full restart to take effect.
 
 # Config syntax crash course
 # ==========================
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
-
+# font-family = Iosevka
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -53,3 +47,8 @@ window-vsync = false
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
+
+theme = TokyoNight
+background-opacity = 0.95
+font-size = 22
+

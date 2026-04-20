@@ -8,6 +8,8 @@ vim.keymap.set({ "n", "v" }, "<C-e>", oil.open_float) --":Oil<CR>")
 vim.keymap.set("n", "<leader>hd", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set('n', '<leader>u', ":UndotreeToggle<CR>")
+
 
 vim.keymap.set("n", "<leader>p", vim.lsp.buf.format, {})
 

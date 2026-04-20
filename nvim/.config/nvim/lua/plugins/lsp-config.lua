@@ -26,7 +26,7 @@ return {
 
       vim.lsp.enable("lua_ls")
       vim.lsp.enable("stylua")
-      vim.lsp.enable("verible")
+      -- vim.lsp.enable("verible")
       vim.lsp.enable("clangd")
       vim.lsp.enable("bashls")
       vim.lsp.enable("svlangserver")

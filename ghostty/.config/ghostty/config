@@ -50,5 +50,5 @@
 
 theme = TokyoNight
 background-opacity = 0.95
-font-size = 22
-
+font-size = 28
+font-family = "Cascadia Mono"

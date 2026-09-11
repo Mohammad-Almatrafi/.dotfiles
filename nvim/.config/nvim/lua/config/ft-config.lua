@@ -4,9 +4,19 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   command = "set filetype=verilog",
 })
 
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = { "*.vh" },
+  command = "set filetype=verilog",
+})
+
 -- Setting the filetype for SystemVerilog
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = { "*.sv" },
+  command = "set filetype=systemverilog",
+})
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = { "*.svh" },
   command = "set filetype=systemverilog",
 })
 

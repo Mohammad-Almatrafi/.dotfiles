@@ -1,5 +1,5 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-local verible_flags = "--rules=-always-comb,-parameter-name-style,-module-filename"
+local verible_flags = "--rules=-always-comb,-parameter-name-style,-module-filename,-unpacked-dimensions-range-ordering"
 
 vim.lsp.config("verible", {
   cmd = { "verible-verilog-ls", verible_flags },

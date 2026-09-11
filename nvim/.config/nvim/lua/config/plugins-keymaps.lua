@@ -1,4 +1,5 @@
 local builtin = require("telescope.builtin")
+local actions = require("telescope.actions")
 vim.keymap.set({ "n", "v" }, "<leader>sf", builtin.find_files, {})
 vim.keymap.set({ "n", "v" }, "<leader>sg", builtin.live_grep, {})
 
@@ -72,3 +73,4 @@ vim.keymap.set("n", "<space>a", vim.lsp.buf.code_action, bufopts)
 -- to open diagnostic window
 vim.keymap.set("n", "<leader>sdg", ":Telescope diagnostics <CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>sdf", ":Telescope diagnostics bufnr=0 <CR>", { noremap = true, silent = true })
+-- vim.keymap.set("i", "<C-e>", actions.results_scrolling_right, { noremap = true, silent = true })
